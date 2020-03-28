@@ -7,15 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A974C6242F4C650092CB11 /* InfectedCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A974C5242F4C650092CB11 /* InfectedCityCell.xib */; };
+		92A974C8242F4EB00092CB11 /* InfectedCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */; };
+		92A974CA242F4F8C0092CB11 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C9242F4F8C0092CB11 /* View.swift */; };
+		92A974CC242F55900092CB11 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CB242F55900092CB11 /* String.swift */; };
+		92AFF0AB242E863A00B12917 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF0AA242E863A00B12917 /* MainViewController.swift */; };
+		92CBFA36242E938500F0224F /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */; };
+		92CBFA37242E938500F0224F /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */; };
+		92CBFA38242E938500F0224F /* Gilroy-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA24242E938500F0224F /* Gilroy-LightItalic.ttf */; };
+		92CBFA39242E938500F0224F /* Gilroy-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA25242E938500F0224F /* Gilroy-ThinItalic.ttf */; };
+		92CBFA3A242E938500F0224F /* Gilroy-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA26242E938500F0224F /* Gilroy-HeavyItalic.ttf */; };
+		92CBFA3B242E938500F0224F /* Gilroy-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA27242E938500F0224F /* Gilroy-BoldItalic.ttf */; };
+		92CBFA3C242E938500F0224F /* Gilroy-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA28242E938500F0224F /* Gilroy-SemiBoldItalic.ttf */; };
+		92CBFA3D242E938500F0224F /* Gilroy-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA29242E938500F0224F /* Gilroy-RegularItalic.ttf */; };
+		92CBFA3E242E938500F0224F /* Gilroy-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2A242E938500F0224F /* Gilroy-BlackItalic.ttf */; };
+		92CBFA3F242E938500F0224F /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2B242E938500F0224F /* Gilroy-Regular.ttf */; };
+		92CBFA40242E938500F0224F /* Gilroy-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2C242E938500F0224F /* Gilroy-UltraLight.ttf */; };
+		92CBFA41242E938500F0224F /* Gilroy-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2D242E938500F0224F /* Gilroy-Black.ttf */; };
+		92CBFA42242E938500F0224F /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2E242E938500F0224F /* Gilroy-ExtraBold.ttf */; };
+		92CBFA43242E938500F0224F /* Gilroy-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA2F242E938500F0224F /* Gilroy-MediumItalic.ttf */; };
+		92CBFA44242E938500F0224F /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA30242E938500F0224F /* Gilroy-Light.ttf */; };
+		92CBFA45242E938500F0224F /* Gilroy-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA31242E938500F0224F /* Gilroy-Thin.ttf */; };
+		92CBFA46242E938500F0224F /* Gilroy-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA32242E938500F0224F /* Gilroy-ExtraBoldItalic.ttf */; };
+		92CBFA47242E938500F0224F /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA33242E938500F0224F /* Gilroy-SemiBold.ttf */; };
+		92CBFA48242E938500F0224F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA34242E938500F0224F /* Gilroy-Bold.ttf */; };
+		92CBFA49242E938500F0224F /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA35242E938500F0224F /* Gilroy-Heavy.ttf */; };
 		92EEEBD5242E7C3100DAAC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEEBD4242E7C3100DAAC3C /* AppDelegate.swift */; };
 		92EEEBD7242E7C3100DAAC3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEEBD6242E7C3100DAAC3C /* SceneDelegate.swift */; };
 		92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEEBD8242E7C3100DAAC3C /* ViewController.swift */; };
 		92EEEBDC242E7C3100DAAC3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEEBDA242E7C3100DAAC3C /* Main.storyboard */; };
 		92EEEBDE242E7C3300DAAC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EEEBDD242E7C3300DAAC3C /* Assets.xcassets */; };
 		92EEEBE1242E7C3300DAAC3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEEBDF242E7C3300DAAC3C /* LaunchScreen.storyboard */; };
+		DEDF1DE54B78CDCC368770B1 /* libPods-CovidKazakhstan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C1444EABF93D9E33A4715B /* libPods-CovidKazakhstan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64B0C130BC0B2B533DE45AA6 /* Pods-CovidKazakhstan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidKazakhstan.debug.xcconfig"; path = "Target Support Files/Pods-CovidKazakhstan/Pods-CovidKazakhstan.debug.xcconfig"; sourceTree = "<group>"; };
+		92A974C5242F4C650092CB11 /* InfectedCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfectedCityCell.xib; sourceTree = "<group>"; };
+		92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedCityCell.swift; sourceTree = "<group>"; };
+		92A974C9242F4F8C0092CB11 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		92A974CB242F55900092CB11 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		92AFF0AA242E863A00B12917 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		92CBFA24242E938500F0224F /* Gilroy-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-LightItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA25242E938500F0224F /* Gilroy-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ThinItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA26242E938500F0224F /* Gilroy-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA27242E938500F0224F /* Gilroy-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-BoldItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA28242E938500F0224F /* Gilroy-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA29242E938500F0224F /* Gilroy-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-RegularItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA2A242E938500F0224F /* Gilroy-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-BlackItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA2B242E938500F0224F /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		92CBFA2C242E938500F0224F /* Gilroy-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLight.ttf"; sourceTree = "<group>"; };
+		92CBFA2D242E938500F0224F /* Gilroy-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Black.ttf"; sourceTree = "<group>"; };
+		92CBFA2E242E938500F0224F /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
+		92CBFA2F242E938500F0224F /* Gilroy-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-MediumItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA30242E938500F0224F /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
+		92CBFA31242E938500F0224F /* Gilroy-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Thin.ttf"; sourceTree = "<group>"; };
+		92CBFA32242E938500F0224F /* Gilroy-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		92CBFA33242E938500F0224F /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		92CBFA34242E938500F0224F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		92CBFA35242E938500F0224F /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
 		92EEEBD1242E7C3100DAAC3C /* CovidKazakhstan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidKazakhstan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EEEBD4242E7C3100DAAC3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EEEBD6242E7C3100DAAC3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +76,8 @@
 		92EEEBDD242E7C3300DAAC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92EEEBE0242E7C3300DAAC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92EEEBE2242E7C3300DAAC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C1444EABF93D9E33A4715B /* libPods-CovidKazakhstan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CovidKazakhstan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC789F5222C5581011B5B58 /* Pods-CovidKazakhstan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidKazakhstan.release.xcconfig"; path = "Target Support Files/Pods-CovidKazakhstan/Pods-CovidKazakhstan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +85,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDF1DE54B78CDCC368770B1 /* libPods-CovidKazakhstan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23CEC694281781EAE5BD5FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64B0C130BC0B2B533DE45AA6 /* Pods-CovidKazakhstan.debug.xcconfig */,
+				ECC789F5222C5581011B5B58 /* Pods-CovidKazakhstan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D2D013FA73C5A5CFEBAD749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1444EABF93D9E33A4715B /* libPods-CovidKazakhstan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A974BF242F4BF10092CB11 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92A974C2242F4C140092CB11 /* Utils */,
+				92A974C1242F4C0E0092CB11 /* Extensions */,
+				92A974C0242F4C020092CB11 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		92A974C0242F4C020092CB11 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92AFF0AA242E863A00B12917 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92A974C1242F4C0E0092CB11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92A974C9242F4F8C0092CB11 /* View.swift */,
+				92A974CB242F55900092CB11 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92A974C2242F4C140092CB11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		92A974C3242F4C210092CB11 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92A974C4242F4C270092CB11 /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		92A974C4242F4C270092CB11 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92A974C5242F4C650092CB11 /* InfectedCityCell.xib */,
+				92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92CBFA21242E938500F0224F /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */,
+				92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */,
+				92CBFA24242E938500F0224F /* Gilroy-LightItalic.ttf */,
+				92CBFA25242E938500F0224F /* Gilroy-ThinItalic.ttf */,
+				92CBFA26242E938500F0224F /* Gilroy-HeavyItalic.ttf */,
+				92CBFA27242E938500F0224F /* Gilroy-BoldItalic.ttf */,
+				92CBFA28242E938500F0224F /* Gilroy-SemiBoldItalic.ttf */,
+				92CBFA29242E938500F0224F /* Gilroy-RegularItalic.ttf */,
+				92CBFA2A242E938500F0224F /* Gilroy-BlackItalic.ttf */,
+				92CBFA2B242E938500F0224F /* Gilroy-Regular.ttf */,
+				92CBFA2C242E938500F0224F /* Gilroy-UltraLight.ttf */,
+				92CBFA2D242E938500F0224F /* Gilroy-Black.ttf */,
+				92CBFA2E242E938500F0224F /* Gilroy-ExtraBold.ttf */,
+				92CBFA2F242E938500F0224F /* Gilroy-MediumItalic.ttf */,
+				92CBFA30242E938500F0224F /* Gilroy-Light.ttf */,
+				92CBFA31242E938500F0224F /* Gilroy-Thin.ttf */,
+				92CBFA32242E938500F0224F /* Gilroy-ExtraBoldItalic.ttf */,
+				92CBFA33242E938500F0224F /* Gilroy-SemiBold.ttf */,
+				92CBFA34242E938500F0224F /* Gilroy-Bold.ttf */,
+				92CBFA35242E938500F0224F /* Gilroy-Heavy.ttf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
 		92EEEBC8242E7C3100DAAC3C = {
 			isa = PBXGroup;
 			children = (
 				92EEEBD3242E7C3100DAAC3C /* CovidKazakhstan */,
 				92EEEBD2242E7C3100DAAC3C /* Products */,
+				23CEC694281781EAE5BD5FFA /* Pods */,
+				3D2D013FA73C5A5CFEBAD749 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +208,8 @@
 		92EEEBD3242E7C3100DAAC3C /* CovidKazakhstan */ = {
 			isa = PBXGroup;
 			children = (
+				92A974C3242F4C210092CB11 /* UI */,
+				92A974BF242F4BF10092CB11 /* Classes */,
 				92EEEBD4242E7C3100DAAC3C /* AppDelegate.swift */,
 				92EEEBD6242E7C3100DAAC3C /* SceneDelegate.swift */,
 				92EEEBD8242E7C3100DAAC3C /* ViewController.swift */,
@@ -63,6 +217,7 @@
 				92EEEBDD242E7C3300DAAC3C /* Assets.xcassets */,
 				92EEEBDF242E7C3300DAAC3C /* LaunchScreen.storyboard */,
 				92EEEBE2242E7C3300DAAC3C /* Info.plist */,
+				92CBFA21242E938500F0224F /* Gilroy */,
 			);
 			path = CovidKazakhstan;
 			sourceTree = "<group>";
@@ -74,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92EEEBE5242E7C3300DAAC3C /* Build configuration list for PBXNativeTarget "CovidKazakhstan" */;
 			buildPhases = (
+				D18EFCE678A9D0AC4A588DE9 /* [CP] Check Pods Manifest.lock */,
 				92EEEBCD242E7C3100DAAC3C /* Sources */,
 				92EEEBCE242E7C3100DAAC3C /* Frameworks */,
 				92EEEBCF242E7C3100DAAC3C /* Resources */,
@@ -125,13 +281,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CBFA3A242E938500F0224F /* Gilroy-HeavyItalic.ttf in Resources */,
+				92CBFA3C242E938500F0224F /* Gilroy-SemiBoldItalic.ttf in Resources */,
+				92CBFA3F242E938500F0224F /* Gilroy-Regular.ttf in Resources */,
+				92CBFA48242E938500F0224F /* Gilroy-Bold.ttf in Resources */,
+				92CBFA43242E938500F0224F /* Gilroy-MediumItalic.ttf in Resources */,
+				92CBFA49242E938500F0224F /* Gilroy-Heavy.ttf in Resources */,
+				92CBFA47242E938500F0224F /* Gilroy-SemiBold.ttf in Resources */,
+				92CBFA41242E938500F0224F /* Gilroy-Black.ttf in Resources */,
+				92CBFA36242E938500F0224F /* Gilroy-UltraLightItalic.ttf in Resources */,
 				92EEEBE1242E7C3300DAAC3C /* LaunchScreen.storyboard in Resources */,
+				92CBFA3E242E938500F0224F /* Gilroy-BlackItalic.ttf in Resources */,
+				92CBFA40242E938500F0224F /* Gilroy-UltraLight.ttf in Resources */,
+				92CBFA42242E938500F0224F /* Gilroy-ExtraBold.ttf in Resources */,
+				92CBFA39242E938500F0224F /* Gilroy-ThinItalic.ttf in Resources */,
+				92CBFA45242E938500F0224F /* Gilroy-Thin.ttf in Resources */,
+				92CBFA46242E938500F0224F /* Gilroy-ExtraBoldItalic.ttf in Resources */,
+				92A974C6242F4C650092CB11 /* InfectedCityCell.xib in Resources */,
+				92CBFA37242E938500F0224F /* Gilroy-Medium.ttf in Resources */,
 				92EEEBDE242E7C3300DAAC3C /* Assets.xcassets in Resources */,
+				92CBFA3D242E938500F0224F /* Gilroy-RegularItalic.ttf in Resources */,
 				92EEEBDC242E7C3100DAAC3C /* Main.storyboard in Resources */,
+				92CBFA44242E938500F0224F /* Gilroy-Light.ttf in Resources */,
+				92CBFA38242E938500F0224F /* Gilroy-LightItalic.ttf in Resources */,
+				92CBFA3B242E938500F0224F /* Gilroy-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D18EFCE678A9D0AC4A588DE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CovidKazakhstan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92EEEBCD242E7C3100DAAC3C /* Sources */ = {
@@ -140,7 +342,11 @@
 			files = (
 				92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */,
 				92EEEBD5242E7C3100DAAC3C /* AppDelegate.swift in Sources */,
+				92A974CA242F4F8C0092CB11 /* View.swift in Sources */,
 				92EEEBD7242E7C3100DAAC3C /* SceneDelegate.swift in Sources */,
+				92A974CC242F55900092CB11 /* String.swift in Sources */,
+				92AFF0AB242E863A00B12917 /* MainViewController.swift in Sources */,
+				92A974C8242F4EB00092CB11 /* InfectedCityCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +488,7 @@
 		};
 		92EEEBE6242E7C3300DAAC3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B0C130BC0B2B533DE45AA6 /* Pods-CovidKazakhstan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +507,7 @@
 		};
 		92EEEBE7242E7C3300DAAC3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC789F5222C5581011B5B58 /* Pods-CovidKazakhstan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

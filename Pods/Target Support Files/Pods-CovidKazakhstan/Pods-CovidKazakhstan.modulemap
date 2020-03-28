@@ -1,0 +1,6 @@
+module Pods_CovidKazakhstan {
+  umbrella header "Pods-CovidKazakhstan-umbrella.h"
+
+  export *
+  module * { export * }
+}
