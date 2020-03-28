@@ -11,6 +11,8 @@
 		92A974C8242F4EB00092CB11 /* InfectedCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */; };
 		92A974CA242F4F8C0092CB11 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C9242F4F8C0092CB11 /* View.swift */; };
 		92A974CC242F55900092CB11 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CB242F55900092CB11 /* String.swift */; };
+		92A974CE242FA4F40092CB11 /* LastDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CD242FA4F40092CB11 /* LastDataViewController.swift */; };
+		92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */; };
 		92AFF0AB242E863A00B12917 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF0AA242E863A00B12917 /* MainViewController.swift */; };
 		92CBFA36242E938500F0224F /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */; };
 		92CBFA37242E938500F0224F /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */; };
@@ -47,6 +49,8 @@
 		92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedCityCell.swift; sourceTree = "<group>"; };
 		92A974C9242F4F8C0092CB11 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		92A974CB242F55900092CB11 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		92A974CD242FA4F40092CB11 /* LastDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDataViewController.swift; sourceTree = "<group>"; };
+		92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPeopleData.swift; sourceTree = "<group>"; };
 		92AFF0AA242E863A00B12917 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				92AFF0AA242E863A00B12917 /* MainViewController.swift */,
+				92A974CD242FA4F40092CB11 /* LastDataViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 		92A974C2242F4C140092CB11 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,10 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */,
 				92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */,
 				92EEEBD5242E7C3100DAAC3C /* AppDelegate.swift in Sources */,
 				92A974CA242F4F8C0092CB11 /* View.swift in Sources */,
 				92EEEBD7242E7C3100DAAC3C /* SceneDelegate.swift in Sources */,
+				92A974CE242FA4F40092CB11 /* LastDataViewController.swift in Sources */,
 				92A974CC242F55900092CB11 /* String.swift in Sources */,
 				92AFF0AB242E863A00B12917 /* MainViewController.swift in Sources */,
 				92A974C8242F4EB00092CB11 /* InfectedCityCell.swift in Sources */,

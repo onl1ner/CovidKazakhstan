@@ -18,7 +18,7 @@ class InfectedCityCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        mainView.layer.cornerRadius = 20
+        mainView.layer.cornerRadius = 10
         
         mainView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
                              withOpacity: 0.2,

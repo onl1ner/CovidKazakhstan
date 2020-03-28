@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  LastDataViewController.swift
 //  CovidKazakhstan
 //
 //  Created by onl1ner onl1ner on 28/03/2020.
@@ -10,17 +10,21 @@ import UIKit
 import Kanna
 import Foundation
 
-class MainViewController: UIViewController {
+class LastDataViewController: UIViewController {
     
     @IBOutlet var infectedBackgroundView: UIView!
     @IBOutlet var infectedAmount: UILabel!
-    @IBOutlet var infectedCityCollectionView: UICollectionView!
     
     @IBOutlet var recoveredBackgroundView: UIView!
     @IBOutlet var recoveredAmount: UILabel!
     
     @IBOutlet var deathsBackgroundView: UIView!
     @IBOutlet var deathsAmount: UILabel!
+    
+    @IBOutlet var contactPeopleBackgroundView: UIView!
+    @IBOutlet var contactPeopleAmount: UILabel!
+    
+    @IBOutlet var infectedCitiesCollectionView: UICollectionView!
     
     let characterSet = CharacterSet(charactersIn: "0123456789").inverted
     
@@ -69,46 +73,64 @@ class MainViewController: UIViewController {
     override func viewDidLoad() -> Void {
         super.viewDidLoad()
 
-        infectedBackgroundView.layer.cornerRadius = 20
+        infectedBackgroundView.layer.cornerRadius = 10
         infectedBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
                                            withOpacity: 0.2,
                                            withOffset: CGSize(width: 0, height: 1))
         
-        recoveredBackgroundView.layer.cornerRadius = 20
+        recoveredBackgroundView.layer.cornerRadius = 10
         recoveredBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
                                             withOpacity: 0.2,
                                             withOffset: CGSize(width: 0, height: 1))
         
-        deathsBackgroundView.layer.cornerRadius = 20
+        deathsBackgroundView.layer.cornerRadius = 10
         deathsBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
                                          withOpacity: 0.2,
                                          withOffset: CGSize(width: 0, height: 1))
         
-        infectedCityCollectionView.delegate = self
-        infectedCityCollectionView.dataSource = self
+        contactPeopleBackgroundView.layer.cornerRadius = 10
+        contactPeopleBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                                                withOpacity: 0.2,
+                                                withOffset: CGSize(width: 0, height: 1))
         
-        infectedCityCollectionView.register(UINib(nibName: "InfectedCityCell", bundle: nil), forCellWithReuseIdentifier: "collectionCell")
-        
-        guard let html = try? String(contentsOf: url) else { return }
-        
-        if let data = try? HTML(html: html, encoding: .utf8) {
-            infectedAmount.text = getTotalInfectedAmount(from: data)
-            infectedCities = getInfectedAmountByCity(from: data)
-            
-            recoveredAmount.text = getTotalRecoveredAmount(from: data)
-            
-            deathsAmount.text = getTotalDeathsAmount(from: data)
+        ContactPeopleData.getContactPeopleAmount() { (amount) in
+            DispatchQueue.main.async {
+                self.contactPeopleAmount.text = amount
+            }
         }
+        
+        DispatchQueue.global(qos: .background).async {
+            guard let html = try? String(contentsOf: self.url) else { return }
+            
+            DispatchQueue.main.async {
+                if let data = try? HTML(html: html, encoding: .utf8) {
+                    self.infectedAmount.text = self.getTotalInfectedAmount(from: data)
+                    self.infectedCities = self.getInfectedAmountByCity(from: data)
+                    
+                    self.recoveredAmount.text = self.getTotalRecoveredAmount(from: data)
+                    
+                    self.deathsAmount.text = self.getTotalDeathsAmount(from: data)
+                }
+                
+                self.infectedCitiesCollectionView.delegate = self
+                self.infectedCitiesCollectionView.dataSource = self
+                
+                self.infectedCitiesCollectionView.register(UINib(nibName: "InfectedCityCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+            }
+        }
+        
+        
     }
 }
 
-extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension LastDataViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return infectedCities.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = infectedCityCollectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! InfectedCityCell
+        let cell = infectedCitiesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! InfectedCityCell
         
         let sortedDictionary = infectedCities.sorted(by: { $0.value > $1.value })
         
@@ -117,5 +139,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         return cell
     }
+    
     
 }
