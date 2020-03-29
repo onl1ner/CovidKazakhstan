@@ -219,14 +219,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-h8-Hi4">
                                                         <rect key="frame" x="0.0" y="0.0" width="105" height="128"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-Do-zFd">
-                                                                <rect key="frame" x="5" y="30" width="95" height="54.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-Do-zFd">
+                                                                <rect key="frame" x="5" y="30" width="95" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="45"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество зараженных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTw-XT-GBS">
-                                                                <rect key="frame" x="8" y="94.5" width="89" height="26"/>
+                                                                <rect key="frame" x="8" y="40" width="89" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -253,14 +253,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuG-bc-uXg">
                                                         <rect key="frame" x="115" y="0.0" width="105" height="128"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-aI-bs2">
-                                                                <rect key="frame" x="5" y="30" width="95" height="54.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-aI-bs2">
+                                                                <rect key="frame" x="5" y="30" width="95" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="45"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество выздоровевших" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="5DH-aM-w8n">
-                                                                <rect key="frame" x="8" y="94.5" width="89" height="26"/>
+                                                                <rect key="frame" x="8" y="40" width="89" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -287,14 +287,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHG-85-oA5">
                                                         <rect key="frame" x="230" y="0.0" width="105" height="128"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-Oe-t0d">
-                                                                <rect key="frame" x="5" y="30" width="95" height="54.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="nrX-Oe-t0d">
+                                                                <rect key="frame" x="5" y="30" width="95" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="45"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество смертей" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgC-xC-nZT">
-                                                                <rect key="frame" x="8" y="94.5" width="89" height="26"/>
+                                                                <rect key="frame" x="8" y="40" width="89" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -332,14 +332,14 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1669" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swQ-lW-Nqf">
-                                                        <rect key="frame" x="10" y="15" width="315" height="60.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swQ-lW-Nqf">
+                                                        <rect key="frame" x="10" y="15" width="315" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="50"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество контактных людей" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08A-Rd-Oag">
-                                                        <rect key="frame" x="10" y="78.5" width="315" height="13"/>
+                                                        <rect key="frame" x="10" y="18" width="315" height="13"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -368,7 +368,7 @@
                                                 <rect key="frame" x="20" y="480" width="335" height="128"/>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="48D-qp-wE3" firstAttribute="top" secondItem="xSV-c6-wGE" secondAttribute="top" constant="20" id="0gY-ec-n6i"/>
                                             <constraint firstItem="IXj-Gv-RiD" firstAttribute="leading" secondItem="SZQ-Ct-9yc" secondAttribute="leading" id="1zh-ji-ZlH"/>
@@ -407,7 +407,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="PsH-Nh-cd6"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="67N-py-OYp" firstAttribute="trailing" secondItem="gtK-I6-ORB" secondAttribute="trailing" id="CR9-vd-1d9"/>
                             <constraint firstItem="gtK-I6-ORB" firstAttribute="leading" secondItem="67N-py-OYp" secondAttribute="leading" id="JSD-Ed-FzV"/>
@@ -440,7 +440,7 @@
                     <view key="view" contentMode="scaleToFill" id="MIB-oD-lzq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W1n-Ew-fxI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Контакты" image="phone.circle" catalog="system" selectedImage="phone.circle.fill" id="aer-bx-czP"/>
@@ -452,18 +452,250 @@
         <!--Информация-->
         <scene sceneID="BDP-Ff-MNd">
             <objects>
-                <viewController id="g6Z-WZ-jm1" sceneMemberID="viewController">
+                <viewController id="g6Z-WZ-jm1" customClass="InformationViewController" customModule="CovidKazakhstan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JAa-C8-AjC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-Qf-k8b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27g-xA-gcI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что такое коронавирус COVID-19? 🦠" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SO-ZM-nGu">
+                                                <rect key="frame" x="20" y="15" width="335" height="60.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-3Y-UIC">
+                                                <rect key="frame" x="20" y="85.5" width="335" height="200"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r1-Yh-REY">
+                                                        <rect key="frame" x="10" y="10" width="315" height="180"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="COVID‑19 – ">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="18" name="Gilroy-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <mutableString key="content">инфекционное заболевание, вызванное последним из недавно открытых коронавирусов. До вспышки инфекции в Ухане, Китай, в декабре 2019 г. о новом вирусе и заболевании ничего не было известно, но с тех пор он распространился по всему миру, что привело к пандемии коронавируса в 2019-2020 гг.</mutableString>
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="17" name="Gilroy-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="6An-0S-6DA"/>
+                                                    <constraint firstItem="4r1-Yh-REY" firstAttribute="leading" secondItem="dYj-3Y-UIC" secondAttribute="leading" constant="10" id="Gr8-91-5ne"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4r1-Yh-REY" secondAttribute="bottom" constant="10" id="XQI-Qi-rDJ"/>
+                                                    <constraint firstItem="4r1-Yh-REY" firstAttribute="top" secondItem="dYj-3Y-UIC" secondAttribute="top" constant="10" id="agr-ZJ-gpu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4r1-Yh-REY" secondAttribute="trailing" constant="10" id="v6l-eO-Fao"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Симптомы 🤧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUA-wL-cDN">
+                                                <rect key="frame" x="20" y="300.5" width="335" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-jq-fAY">
+                                                <rect key="frame" x="0.0" y="341" width="375" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="4x5-d8-2Ok"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QJr-Xa-awj">
+                                                    <size key="itemSize" width="120" height="190"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="symptom0" id="OKU-Un-8uX">
+                                                        <rect key="frame" x="20" y="5" width="120" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZZN-cZ-AQh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="190"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hightemperature" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-Ib-N52">
+                                                                    <rect key="frame" x="5" y="10" width="110" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="4jE-Yn-VwP"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повышенная температура" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT2-gs-vTF">
+                                                                    <rect key="frame" x="5" y="148" width="110" height="35"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="gT2-gs-vTF" firstAttribute="top" secondItem="S3q-Ib-N52" secondAttribute="bottom" constant="10" id="A4e-tJ-9gi"/>
+                                                                <constraint firstItem="gT2-gs-vTF" firstAttribute="leading" secondItem="ZZN-cZ-AQh" secondAttribute="leading" constant="5" id="BvE-rb-AlF"/>
+                                                                <constraint firstItem="S3q-Ib-N52" firstAttribute="leading" secondItem="ZZN-cZ-AQh" secondAttribute="leading" constant="5" id="F08-ee-2qu"/>
+                                                                <constraint firstItem="S3q-Ib-N52" firstAttribute="top" secondItem="ZZN-cZ-AQh" secondAttribute="top" constant="10" id="UDi-cQ-mkn"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gT2-gs-vTF" secondAttribute="trailing" constant="5" id="ybu-Bh-Rcg"/>
+                                                                <constraint firstAttribute="trailing" secondItem="S3q-Ib-N52" secondAttribute="trailing" constant="5" id="zCN-aP-wnq"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="symptom1" id="TeV-bc-Pp3">
+                                                        <rect key="frame" x="150" y="5" width="120" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ud3-cM-dpx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="190"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sneezing" translatesAutoresizingMaskIntoConstraints="NO" id="TBL-8R-OX6">
+                                                                    <rect key="frame" x="5" y="10" width="110" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="b4k-Zn-dWD"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сухой кашель и насморк" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmo-XK-LIr">
+                                                                    <rect key="frame" x="5" y="148" width="110" height="35"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="TBL-8R-OX6" firstAttribute="top" secondItem="Ud3-cM-dpx" secondAttribute="top" constant="10" id="8m1-sX-01T"/>
+                                                                <constraint firstItem="TBL-8R-OX6" firstAttribute="leading" secondItem="Ud3-cM-dpx" secondAttribute="leading" constant="5" id="KhD-0N-0Zf"/>
+                                                                <constraint firstAttribute="trailing" secondItem="TBL-8R-OX6" secondAttribute="trailing" constant="5" id="dfd-E1-dXx"/>
+                                                                <constraint firstItem="Rmo-XK-LIr" firstAttribute="leading" secondItem="Ud3-cM-dpx" secondAttribute="leading" constant="5" id="ghr-QS-Z9V"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Rmo-XK-LIr" secondAttribute="trailing" constant="5" id="gwZ-2u-oWd"/>
+                                                                <constraint firstItem="Rmo-XK-LIr" firstAttribute="top" secondItem="TBL-8R-OX6" secondAttribute="bottom" constant="10" id="tLu-U0-QsH"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="symptom2" id="chh-N8-hMd">
+                                                        <rect key="frame" x="280" y="5" width="120" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QPO-68-U96">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="190"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headache" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-1S-ry1">
+                                                                    <rect key="frame" x="5" y="10" width="110" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="4Ll-px-XRC"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Головные боли" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWN-H2-HLO">
+                                                                    <rect key="frame" x="5" y="148" width="110" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="XWN-H2-HLO" firstAttribute="top" secondItem="BVS-1S-ry1" secondAttribute="bottom" constant="10" id="4Ue-Va-fzt"/>
+                                                                <constraint firstAttribute="trailing" secondItem="XWN-H2-HLO" secondAttribute="trailing" constant="5" id="4Wd-cD-Kug"/>
+                                                                <constraint firstItem="BVS-1S-ry1" firstAttribute="leading" secondItem="QPO-68-U96" secondAttribute="leading" constant="5" id="79a-UQ-yXa"/>
+                                                                <constraint firstItem="XWN-H2-HLO" firstAttribute="leading" secondItem="QPO-68-U96" secondAttribute="leading" constant="5" id="GWe-a1-FPZ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BVS-1S-ry1" secondAttribute="trailing" constant="5" id="ZSj-HT-K7N"/>
+                                                                <constraint firstItem="BVS-1S-ry1" firstAttribute="top" secondItem="QPO-68-U96" secondAttribute="top" constant="10" id="jiw-Rw-jIS"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="symptom3" id="nD2-Ap-iFo">
+                                                        <rect key="frame" x="410" y="5" width="120" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eIu-nu-atS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="190"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cough" translatesAutoresizingMaskIntoConstraints="NO" id="f87-c3-Loy">
+                                                                    <rect key="frame" x="5" y="10" width="110" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="bsr-Q9-GHD"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Боль в горле" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrw-dq-vsH">
+                                                                    <rect key="frame" x="5" y="148" width="110" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="f87-c3-Loy" firstAttribute="top" secondItem="eIu-nu-atS" secondAttribute="top" constant="10" id="3kT-hY-9v8"/>
+                                                                <constraint firstItem="f87-c3-Loy" firstAttribute="leading" secondItem="eIu-nu-atS" secondAttribute="leading" constant="5" id="FFc-67-efy"/>
+                                                                <constraint firstItem="Hrw-dq-vsH" firstAttribute="top" secondItem="f87-c3-Loy" secondAttribute="bottom" constant="10" id="FMh-qx-hlZ"/>
+                                                                <constraint firstItem="Hrw-dq-vsH" firstAttribute="leading" secondItem="eIu-nu-atS" secondAttribute="leading" constant="5" id="V9v-70-OUp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="f87-c3-Loy" secondAttribute="trailing" constant="5" id="VY6-Wm-nwr"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Hrw-dq-vsH" secondAttribute="trailing" constant="5" id="iYI-og-Sem"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iF3-jq-fAY" secondAttribute="trailing" id="Eum-E5-sld"/>
+                                            <constraint firstItem="iF3-jq-fAY" firstAttribute="top" secondItem="gUA-wL-cDN" secondAttribute="bottom" constant="10" id="HhC-1x-RXO"/>
+                                            <constraint firstAttribute="trailing" secondItem="dYj-3Y-UIC" secondAttribute="trailing" constant="20" id="McE-1e-epk"/>
+                                            <constraint firstItem="dYj-3Y-UIC" firstAttribute="top" secondItem="2SO-ZM-nGu" secondAttribute="bottom" constant="10" id="W65-Bo-lXS"/>
+                                            <constraint firstItem="gUA-wL-cDN" firstAttribute="top" secondItem="dYj-3Y-UIC" secondAttribute="bottom" constant="15" id="Y1c-IE-0ZL"/>
+                                            <constraint firstItem="2SO-ZM-nGu" firstAttribute="top" secondItem="27g-xA-gcI" secondAttribute="top" constant="15" id="ZIb-4n-1S0"/>
+                                            <constraint firstItem="iF3-jq-fAY" firstAttribute="leading" secondItem="27g-xA-gcI" secondAttribute="leading" id="cB0-s9-DRa"/>
+                                            <constraint firstItem="2SO-ZM-nGu" firstAttribute="leading" secondItem="27g-xA-gcI" secondAttribute="leading" constant="20" id="ckX-dh-dcO"/>
+                                            <constraint firstItem="dYj-3Y-UIC" firstAttribute="leading" secondItem="27g-xA-gcI" secondAttribute="leading" constant="20" id="ess-gt-mEV"/>
+                                            <constraint firstAttribute="trailing" secondItem="2SO-ZM-nGu" secondAttribute="trailing" constant="20" id="ezy-GF-SeZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="gUA-wL-cDN" secondAttribute="trailing" constant="20" id="hdm-y9-jiJ"/>
+                                            <constraint firstItem="gUA-wL-cDN" firstAttribute="leading" secondItem="27g-xA-gcI" secondAttribute="leading" constant="20" id="oXt-tp-h1p"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="27g-xA-gcI" firstAttribute="height" secondItem="CCg-Qf-k8b" secondAttribute="height" priority="250" id="3rl-gQ-buB"/>
+                                    <constraint firstItem="27g-xA-gcI" firstAttribute="width" secondItem="CCg-Qf-k8b" secondAttribute="width" id="IIQ-2Y-n7Y"/>
+                                    <constraint firstItem="27g-xA-gcI" firstAttribute="top" secondItem="CCg-Qf-k8b" secondAttribute="top" id="OAL-bz-0Bg"/>
+                                    <constraint firstAttribute="bottom" secondItem="27g-xA-gcI" secondAttribute="bottom" id="Zlt-9y-2gH"/>
+                                    <constraint firstItem="27g-xA-gcI" firstAttribute="leading" secondItem="CCg-Qf-k8b" secondAttribute="leading" id="fiD-ym-zvr"/>
+                                    <constraint firstAttribute="trailing" secondItem="27g-xA-gcI" secondAttribute="trailing" id="uQu-NX-f0J"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="QJK-Yx-ooP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="tN4-NX-Qof"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fP1-UH-Ass" firstAttribute="trailing" secondItem="CCg-Qf-k8b" secondAttribute="trailing" id="ACu-S3-peD"/>
+                            <constraint firstItem="CCg-Qf-k8b" firstAttribute="top" secondItem="fP1-UH-Ass" secondAttribute="top" id="HdN-nF-O5B"/>
+                            <constraint firstItem="CCg-Qf-k8b" firstAttribute="leading" secondItem="fP1-UH-Ass" secondAttribute="leading" id="KME-99-FDC"/>
+                            <constraint firstItem="fP1-UH-Ass" firstAttribute="bottom" secondItem="CCg-Qf-k8b" secondAttribute="bottom" id="rq1-rc-r3d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fP1-UH-Ass"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Информация" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="QB5-YN-aBg"/>
+                    <connections>
+                        <outlet property="aboutCoronaBox" destination="dYj-3Y-UIC" id="nmA-je-nMw"/>
+                        <outlet property="symptomsCollectionView" destination="iF3-jq-fAY" id="GC1-6h-jGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQN-ky-faV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="583"/>
+            <point key="canvasLocation" x="-194.40000000000001" y="582.45877061469275"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pLA-DH-MFn">
@@ -490,9 +722,13 @@
     <resources>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
         <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="cough" width="512" height="512"/>
+        <image name="headache" width="512" height="512"/>
+        <image name="hightemperature" width="512" height="512"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="info.circle.fill" catalog="system" width="64" height="60"/>
         <image name="phone.circle" catalog="system" width="64" height="60"/>
         <image name="phone.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="sneezing" width="512" height="512"/>
     </resources>
 </document>

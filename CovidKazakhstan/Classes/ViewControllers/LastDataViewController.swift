@@ -32,29 +32,7 @@ class LastDataViewController: UIViewController {
     
     var dataByCity : [(String, [Int])]?
     
-    override func viewDidLoad() -> Void {
-        super.viewDidLoad()
-
-        infectedBackgroundView.layer.cornerRadius = 10
-        infectedBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                           withOpacity: 0.2,
-                                           withOffset: CGSize(width: 0, height: 1))
-        
-        recoveredBackgroundView.layer.cornerRadius = 10
-        recoveredBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                            withOpacity: 0.2,
-                                            withOffset: CGSize(width: 0, height: 1))
-        
-        deathsBackgroundView.layer.cornerRadius = 10
-        deathsBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                         withOpacity: 0.2,
-                                         withOffset: CGSize(width: 0, height: 1))
-        
-        contactPeopleBackgroundView.layer.cornerRadius = 10
-        contactPeopleBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                                withOpacity: 0.2,
-                                                withOffset: CGSize(width: 0, height: 1))
-        
+    func updateData() -> Void {
         ContactPeopleData.getContactPeopleAmount() { (amount) in
             DispatchQueue.main.async {
                 self.contactPeopleAmount.text = amount
@@ -75,19 +53,51 @@ class LastDataViewController: UIViewController {
                     self.dataByCity = scrappedData.getInfectedAndRecoveredAmountByCity()
                 }
                 
+                self.infectedCitiesStackView.subviews.forEach({ $0.removeFromSuperview() })
+                
                 for cell in self.dataByCity! {
                     let newCell = UINib(nibName: "InfectedCityCell", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! InfectedCityCell
-                    
+
                     newCell.heightAnchor.constraint(equalToConstant: 90).isActive = true
-                    
+
                     newCell.infectedCityLabel.text = cell.0
                     newCell.infectedAmount.text = String(cell.1[0])
-                    
+
                     newCell.recoveredAmount.text = String(cell.1[1])
-                    
+
                     self.infectedCitiesStackView.addArrangedSubview(newCell)
                 }
             }
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        updateData()
+    }
+    
+    override func viewDidLoad() -> Void {
+        super.viewDidLoad()
+        
+        infectedBackgroundView.layer.cornerRadius = 10
+        infectedBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                                           withOpacity: 0.2,
+                                           withOffset: CGSize(width: 0, height: 1))
+        
+        recoveredBackgroundView.layer.cornerRadius = 10
+        recoveredBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                                            withOpacity: 0.2,
+                                            withOffset: CGSize(width: 0, height: 1))
+        
+        deathsBackgroundView.layer.cornerRadius = 10
+        deathsBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                                         withOpacity: 0.2,
+                                         withOffset: CGSize(width: 0, height: 1))
+        
+        contactPeopleBackgroundView.layer.cornerRadius = 10
+        contactPeopleBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                                                withOpacity: 0.2,
+                                                withOffset: CGSize(width: 0, height: 1))
     }
 }
