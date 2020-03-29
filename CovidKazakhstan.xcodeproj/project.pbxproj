@@ -14,6 +14,7 @@
 		92A974CE242FA4F40092CB11 /* LastDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CD242FA4F40092CB11 /* LastDataViewController.swift */; };
 		92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */; };
 		92AFF0AB242E863A00B12917 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF0AA242E863A00B12917 /* MainViewController.swift */; };
+		92C95BF42430B94600C49B81 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C95BF32430B94600C49B81 /* WebScraper.swift */; };
 		92CBFA36242E938500F0224F /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */; };
 		92CBFA37242E938500F0224F /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */; };
 		92CBFA38242E938500F0224F /* Gilroy-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA24242E938500F0224F /* Gilroy-LightItalic.ttf */; };
@@ -52,6 +53,7 @@
 		92A974CD242FA4F40092CB11 /* LastDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDataViewController.swift; sourceTree = "<group>"; };
 		92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPeopleData.swift; sourceTree = "<group>"; };
 		92AFF0AA242E863A00B12917 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		92C95BF32430B94600C49B81 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		92CBFA24242E938500F0224F /* Gilroy-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */,
+				92C95BF32430B94600C49B81 /* WebScraper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */,
+				92C95BF42430B94600C49B81 /* WebScraper.swift in Sources */,
 				92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */,
 				92EEEBD5242E7C3100DAAC3C /* AppDelegate.swift in Sources */,
 				92A974CA242F4F8C0092CB11 /* View.swift in Sources */,

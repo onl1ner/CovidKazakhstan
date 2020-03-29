@@ -30,45 +30,7 @@ class LastDataViewController: UIViewController {
     
     let url = URL(string: "https://www.coronavirus2020.kz/")!
     
-    var infectedCities : [String : Int] = [:]
-    
-    func getTotalInfectedAmount(from data : HTMLDocument) -> String {
-        return (data.xpath("//span[@class=\"number_cov marg_med\"]")[0].text?.deleteAllSpaces())!
-    }
-    
-    func getInfectedAmountByCity(from data : HTMLDocument) -> [String : Int] {
-        let cities = data.xpath("//div[@class=\"city_cov\"]")[0].text?.deleteAllSpaces()
-        
-        var output : [String : Int] = [:]
-        
-        for i in ((cities?.components(separatedBy: .newlines))!) {
-            if i.count > 0 {
-                let amountOfInfected = Int(i.components(separatedBy: characterSet).joined())
-                
-                var city = i.components(separatedBy: .decimalDigits).joined()
-                
-                if city.contains("область") {
-                    let range = city.range(of: "область")?.lowerBound
-                    city.insert(contentsOf: " ", at: range!)
-                }
-                
-                city.removeLast()
-                
-                output[city] = amountOfInfected
-            }
-        }
-        return output
-    }
-    
-    func getTotalRecoveredAmount(from data : HTMLDocument) -> String {
-        let downloadedData = (data.xpath("//div[@class=\"recov_bl\"]")[0].text?.deleteAllSpaces())!
-        return downloadedData.components(separatedBy: characterSet).joined()
-    }
-    
-    func getTotalDeathsAmount(from data : HTMLDocument) -> String {
-        let downloadedData = (data.xpath("//div[@class=\"deaths_bl\"]")[0].text?.deleteAllSpaces())!
-        return downloadedData.components(separatedBy: characterSet).joined()
-    }
+    var dataByCity : [(String, [Int])]?
     
     override func viewDidLoad() -> Void {
         super.viewDidLoad()
@@ -104,41 +66,36 @@ class LastDataViewController: UIViewController {
             
             DispatchQueue.main.async {
                 if let data = try? HTML(html: html, encoding: .utf8) {
-                    self.infectedAmount.text = self.getTotalInfectedAmount(from: data)
-                    self.infectedCities = self.getInfectedAmountByCity(from: data)
+                    let scrappedData = WebScrapper(fromData: data)
                     
-                    self.recoveredAmount.text = self.getTotalRecoveredAmount(from: data)
+                    self.infectedAmount.text = scrappedData.getTotalInfectedAmount()
+                    self.recoveredAmount.text = scrappedData.getTotalRecoveredAmount()
+                    self.deathsAmount.text = scrappedData.getTotalDeathsAmount()
                     
-                    self.deathsAmount.text = self.getTotalDeathsAmount(from: data)
+                    self.dataByCity = scrappedData.getInfectedAndRecoveredAmountByCity()
                 }
-                
                 self.infectedCitiesCollectionView.delegate = self
                 self.infectedCitiesCollectionView.dataSource = self
                 
                 self.infectedCitiesCollectionView.register(UINib(nibName: "InfectedCityCell", bundle: nil), forCellWithReuseIdentifier: "cell")
             }
         }
-        
-        
     }
 }
 
 extension LastDataViewController : UICollectionViewDelegate, UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return infectedCities.count
+        return dataByCity!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = infectedCitiesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! InfectedCityCell
         
-        let sortedDictionary = infectedCities.sorted(by: { $0.value > $1.value })
+        cell.infectedAmount.text = String(dataByCity![indexPath.row].1[0])
+        cell.infectedCityLabel.text = dataByCity![indexPath.row].0
         
-        cell.infectedCityLabel.text = sortedDictionary[indexPath.row].key
-        cell.infectedAmount.text = String(sortedDictionary[indexPath.row].value)
+        cell.recoveredAmount.text = String(dataByCity![indexPath.row].1[1])
         
         return cell
     }
-    
-    
 }

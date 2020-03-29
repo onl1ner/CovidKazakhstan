@@ -85,6 +85,7 @@
                 <outlet property="infectedAmount" destination="dDc-iv-TdS" id="ig0-Kq-Bj3"/>
                 <outlet property="infectedCityLabel" destination="jFu-IJ-aFM" id="aAi-Oe-JGM"/>
                 <outlet property="mainView" destination="F5i-rU-JRB" id="uw1-Li-1yV"/>
+                <outlet property="recoveredAmount" destination="5eo-QE-qaM" id="orq-eV-xc4"/>
             </connections>
             <point key="canvasLocation" x="122" y="-185"/>
         </collectionViewCell>

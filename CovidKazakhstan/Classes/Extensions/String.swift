@@ -12,4 +12,14 @@ extension String {
     func deleteAllSpaces() -> String {
         return self.components(separatedBy: .whitespaces).joined()
     }
+    
+    func formatCityName() -> String {
+        var formattedString = self
+        
+        if self.contains("область") {
+            let range = self.range(of: "область")?.lowerBound
+            formattedString.insert(" ", at: range!)
+        }
+        return formattedString
+    }
 }

@@ -15,6 +15,8 @@ class InfectedCityCell: UICollectionViewCell {
     @IBOutlet var infectedCityLabel: UILabel!
     @IBOutlet var infectedAmount: UILabel!
     
+    @IBOutlet var recoveredAmount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -195,20 +195,20 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Официальные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Es-3D-wuR">
-                                <rect key="frame" x="20" y="71.5" width="177.5" height="20"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Официальные данные (coronavirus2020.kz)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Es-3D-wuR">
+                                <rect key="frame" x="20" y="71.5" width="299.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ситуация в стране" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-1E-SkS">
-                                <rect key="frame" x="20" y="101.5" width="335" height="31"/>
+                                <rect key="frame" x="20" y="99" width="335" height="31"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab7-6S-jB1">
-                                <rect key="frame" x="137" y="142.5" width="101" height="150"/>
+                                <rect key="frame" x="137" y="140" width="101" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-bi-fma">
                                         <rect key="frame" x="10" y="30" width="81" height="0.0"/>
@@ -243,7 +243,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-TD-52B">
-                                <rect key="frame" x="20" y="142.5" width="101.5" height="150"/>
+                                <rect key="frame" x="20" y="140" width="101.5" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-ae-avx">
                                         <rect key="frame" x="10" y="30" width="81.5" height="0.0"/>
@@ -278,7 +278,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-Aj-K0i">
-                                <rect key="frame" x="254" y="142.5" width="101" height="150"/>
+                                <rect key="frame" x="254" y="140" width="101" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9o-eU-6hC">
                                         <rect key="frame" x="10" y="30" width="81" height="0.0"/>
@@ -313,7 +313,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsN-mF-f6v">
-                                <rect key="frame" x="20" y="307.5" width="335" height="100"/>
+                                <rect key="frame" x="20" y="305" width="335" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-Y5-pgO">
                                         <rect key="frame" x="10" y="15" width="315" height="0.0"/>
@@ -348,13 +348,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ситуация в городах и областях" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bso-Zr-T0q">
-                                <rect key="frame" x="20" y="417.5" width="335" height="60.5"/>
+                                <rect key="frame" x="20" y="415" width="335" height="60.5"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-jw-QjB">
-                                <rect key="frame" x="0.0" y="483" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="480.5" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="VaK-Yv-6NC"/>

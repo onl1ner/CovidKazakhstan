@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct ResponseData : Codable {
     let id : Int
     let status : String
