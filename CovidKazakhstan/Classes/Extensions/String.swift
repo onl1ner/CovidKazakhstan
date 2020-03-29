@@ -19,7 +19,11 @@ extension String {
         if self.contains("область") {
             let range = self.range(of: "область")?.lowerBound
             formattedString.insert(" ", at: range!)
+        } else {
+            let range = self.range(of: "г.")?.upperBound
+            formattedString.insert(" ", at: range!)
         }
+        
         return formattedString
     }
 }

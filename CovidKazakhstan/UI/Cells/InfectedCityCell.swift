@@ -8,10 +8,8 @@
 
 import UIKit
 
-class InfectedCityCell: UICollectionViewCell {
+class InfectedCityCell: UIView {
 
-    @IBOutlet var mainView: UIView!
-    
     @IBOutlet var infectedCityLabel: UILabel!
     @IBOutlet var infectedAmount: UILabel!
     
@@ -20,11 +18,10 @@ class InfectedCityCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        mainView.layer.cornerRadius = 10
+        self.layer.cornerRadius = 10
         
-        mainView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                             withOpacity: 0.2,
-                             withOffset: CGSize(width: 0, height: 1))
-        // Initialization code
+        self.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                         withOpacity: 0.2,
+                         withOffset: CGSize(width: 0, height: 1))
     }
 }

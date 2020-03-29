@@ -24,7 +24,7 @@ class LastDataViewController: UIViewController {
     @IBOutlet var contactPeopleBackgroundView: UIView!
     @IBOutlet var contactPeopleAmount: UILabel!
     
-    @IBOutlet var infectedCitiesCollectionView: UICollectionView!
+    @IBOutlet var infectedCitiesStackView: UIStackView!
     
     let characterSet = CharacterSet(charactersIn: "0123456789").inverted
     
@@ -74,28 +74,20 @@ class LastDataViewController: UIViewController {
                     
                     self.dataByCity = scrappedData.getInfectedAndRecoveredAmountByCity()
                 }
-                self.infectedCitiesCollectionView.delegate = self
-                self.infectedCitiesCollectionView.dataSource = self
                 
-                self.infectedCitiesCollectionView.register(UINib(nibName: "InfectedCityCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+                for cell in self.dataByCity! {
+                    let newCell = UINib(nibName: "InfectedCityCell", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! InfectedCityCell
+                    
+                    newCell.heightAnchor.constraint(equalToConstant: 90).isActive = true
+                    
+                    newCell.infectedCityLabel.text = cell.0
+                    newCell.infectedAmount.text = String(cell.1[0])
+                    
+                    newCell.recoveredAmount.text = String(cell.1[1])
+                    
+                    self.infectedCitiesStackView.addArrangedSubview(newCell)
+                }
             }
         }
-    }
-}
-
-extension LastDataViewController : UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataByCity!.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = infectedCitiesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! InfectedCityCell
-        
-        cell.infectedAmount.text = String(dataByCity![indexPath.row].1[0])
-        cell.infectedCityLabel.text = dataByCity![indexPath.row].0
-        
-        cell.recoveredAmount.text = String(dataByCity![indexPath.row].1[1])
-        
-        return cell
     }
 }

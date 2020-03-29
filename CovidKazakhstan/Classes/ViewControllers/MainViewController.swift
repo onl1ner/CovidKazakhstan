@@ -108,12 +108,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = infectedCityCollectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! InfectedCityCell
-        
-        let sortedDictionary = infectedCities.sorted(by: { $0.value > $1.value })
-        
-        cell.infectedCityLabel.text = sortedDictionary[indexPath.row].key
-        cell.infectedAmount.text = String(sortedDictionary[indexPath.row].value)
+        let cell = UICollectionViewCell()
         
         return cell
     }
