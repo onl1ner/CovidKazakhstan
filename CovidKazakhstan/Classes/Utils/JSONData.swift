@@ -52,24 +52,6 @@ struct Response : Codable {
     let features : [Features]
 }
 
-final class ContactPeopleData {
-    static let apiUrl = URL(string: "https://m.egov.kz/covid-proxy-app/api/v1/covid/patient")!
-    
-    private static func getData(from url : URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) -> Void {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    
-    public static func getContactPeopleAmount(completion: @escaping (_ amount : String) -> ()) -> Void {
-        getData(from: apiUrl){ (data, response, error) in
-            if let data = data {
-                if let jsonData = try? JSONDecoder().decode([ResponseData].self, from: data) {
-                    completion(String(jsonData.count))
-                }
-            }
-        }
-    }
-}
-
 final class JSONData {
     private static func getData(from url : URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) -> Void {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()

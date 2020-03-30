@@ -14,7 +14,7 @@
 		92A974CA242F4F8C0092CB11 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C9242F4F8C0092CB11 /* View.swift */; };
 		92A974CC242F55900092CB11 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CB242F55900092CB11 /* String.swift */; };
 		92A974CE242FA4F40092CB11 /* LastDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CD242FA4F40092CB11 /* LastDataViewController.swift */; };
-		92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */; };
+		92A974D0242FB3AF0092CB11 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974CF242FB3AF0092CB11 /* JSONData.swift */; };
 		92C95BF42430B94600C49B81 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C95BF32430B94600C49B81 /* WebScraper.swift */; };
 		92CBFA36242E938500F0224F /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */; };
 		92CBFA37242E938500F0224F /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */; };
@@ -54,7 +54,7 @@
 		92A974C9242F4F8C0092CB11 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		92A974CB242F55900092CB11 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		92A974CD242FA4F40092CB11 /* LastDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDataViewController.swift; sourceTree = "<group>"; };
-		92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPeopleData.swift; sourceTree = "<group>"; };
+		92A974CF242FB3AF0092CB11 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		92C95BF32430B94600C49B81 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		92CBFA22242E938500F0224F /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		92CBFA23242E938500F0224F /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		92A974C2242F4C140092CB11 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				92A974CF242FB3AF0092CB11 /* ContactPeopleData.swift */,
+				92A974CF242FB3AF0092CB11 /* JSONData.swift */,
 				92C95BF32430B94600C49B81 /* WebScraper.swift */,
 			);
 			path = Utils;
@@ -352,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */,
+				92A974D0242FB3AF0092CB11 /* JSONData.swift in Sources */,
 				921A0E12243242520082A285 /* ContactsViewController.swift in Sources */,
 				92C95BF42430B94600C49B81 /* WebScraper.swift in Sources */,
 				92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */,
