@@ -354,18 +354,328 @@
         <!--Контакты-->
         <scene sceneID="uEM-pR-PMK">
             <objects>
-                <viewController id="4zP-Zl-QLR" sceneMemberID="viewController">
+                <viewController id="4zP-Zl-QLR" customClass="ContactsViewController" customModule="CovidKazakhstan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIB-oD-lzq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLy-aa-lJN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zt-lD-bRh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="747"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда обратиться по вопросам коронавируса?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-K9-zyf">
+                                                <rect key="frame" x="20" y="20" width="335" height="60.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Если у вас или ваших близких есть подозрение на вирус либо проявляются симптомы, рекомендуются обратиться:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckz-C3-dYd">
+                                                <rect key="frame" x="20" y="85.5" width="335" height="52.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rOm-xd-ct6">
+                                                <rect key="frame" x="20" y="148" width="335" height="150"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAP-t1-9YI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tw1-gj-v31">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                                                <connections>
+                                                                    <action selector="callToEmergency:" destination="4zP-Zl-QLR" eventType="touchUpInside" id="hJv-Ld-0sD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="103" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-Ex-M0r">
+                                                                <rect key="frame" x="10" y="5" width="95" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="95" id="K5Z-ge-exY"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="42"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вызов бригады скорой медицинской помощи" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ft-dT-OpK">
+                                                                <rect key="frame" x="120" y="5" width="210" height="60"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Ano-Ex-M0r" firstAttribute="leading" secondItem="HAP-t1-9YI" secondAttribute="leading" constant="10" id="1zN-r3-Kwl"/>
+                                                            <constraint firstItem="Tw1-gj-v31" firstAttribute="top" secondItem="HAP-t1-9YI" secondAttribute="top" id="4Fz-Hn-PTU"/>
+                                                            <constraint firstItem="2Ft-dT-OpK" firstAttribute="leading" secondItem="Ano-Ex-M0r" secondAttribute="trailing" constant="15" id="Ezw-Dv-HHt"/>
+                                                            <constraint firstItem="2Ft-dT-OpK" firstAttribute="top" secondItem="HAP-t1-9YI" secondAttribute="top" constant="5" id="QBl-rP-6uv"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Tw1-gj-v31" secondAttribute="bottom" id="RAo-kT-oYK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Ft-dT-OpK" secondAttribute="trailing" constant="5" id="dbG-Aw-XvO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2Ft-dT-OpK" secondAttribute="bottom" constant="5" id="eag-mo-6D3"/>
+                                                            <constraint firstItem="Tw1-gj-v31" firstAttribute="leading" secondItem="HAP-t1-9YI" secondAttribute="leading" id="h6Z-NH-qK3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Tw1-gj-v31" secondAttribute="trailing" id="nNf-z4-IbW"/>
+                                                            <constraint firstItem="Ano-Ex-M0r" firstAttribute="top" secondItem="HAP-t1-9YI" secondAttribute="top" constant="5" id="vDa-TC-8jp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ano-Ex-M0r" secondAttribute="bottom" constant="5" id="zS7-lu-TzD"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vga-iO-7hA">
+                                                        <rect key="frame" x="0.0" y="80" width="335" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-2r-8Fy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                                                <connections>
+                                                                    <action selector="callToHealthMinistry:" destination="4zP-Zl-QLR" eventType="touchUpInside" id="MVB-Ca-Q16"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1406" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHN-yc-dKj">
+                                                                <rect key="frame" x="10" y="5" width="95" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="95" id="2b0-cF-clj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="42"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон горячей линии министерства здравоохранения РК" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFP-RU-eQX">
+                                                                <rect key="frame" x="120" y="5" width="210" height="60"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="rHN-yc-dKj" secondAttribute="bottom" constant="5" id="0Kd-FP-E2V"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oFP-RU-eQX" secondAttribute="bottom" constant="5" id="2RS-WQ-aXd"/>
+                                                            <constraint firstItem="TCa-2r-8Fy" firstAttribute="top" secondItem="Vga-iO-7hA" secondAttribute="top" id="97j-vq-v9H"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oFP-RU-eQX" secondAttribute="trailing" constant="5" id="E8e-8w-sq3"/>
+                                                            <constraint firstItem="rHN-yc-dKj" firstAttribute="leading" secondItem="Vga-iO-7hA" secondAttribute="leading" constant="10" id="H4a-rA-gcK"/>
+                                                            <constraint firstItem="TCa-2r-8Fy" firstAttribute="leading" secondItem="Vga-iO-7hA" secondAttribute="leading" id="HmZ-zF-cAc"/>
+                                                            <constraint firstItem="rHN-yc-dKj" firstAttribute="top" secondItem="Vga-iO-7hA" secondAttribute="top" constant="5" id="bSM-O8-0Od"/>
+                                                            <constraint firstItem="oFP-RU-eQX" firstAttribute="leading" secondItem="rHN-yc-dKj" secondAttribute="trailing" constant="15" id="kB9-BL-2dk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="TCa-2r-8Fy" secondAttribute="bottom" id="mn6-IP-uvh"/>
+                                                            <constraint firstItem="oFP-RU-eQX" firstAttribute="top" secondItem="Vga-iO-7hA" secondAttribute="top" constant="5" id="mso-y4-Jh6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="TCa-2r-8Fy" secondAttribute="trailing" id="nan-dD-o39"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="e6o-05-G58"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имеются вопросы по коронавирусной инфекции COVID-2019?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-HZ-3Ns">
+                                                <rect key="frame" x="20" y="313" width="335" height="91"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvX-za-Smv">
+                                                <rect key="frame" x="20" y="409" width="335" height="98.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Национальный Центр Общественного Здравоохранения">
+                                                        <attributes>
+                                                            <font key="NSFont" size="16" name="Gilroy-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" запустил Telegram-бота ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="Gilroy-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="🤖">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", с помощью которого пользователи могут получить ответы на вопросы по коронавирусной инфекции COVID-2019. ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="Gilroy-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gi6-aR-JNg">
+                                                <rect key="frame" x="20" y="517.5" width="335" height="70"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegram" translatesAutoresizingMaskIntoConstraints="NO" id="Lqk-gB-mVL">
+                                                        <rect key="frame" x="10" y="5" width="45" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="0tT-gT-TAZ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zW-IS-YGj">
+                                                        <rect key="frame" x="70" y="5" width="260" height="60"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Коронавирус – Горячая линия. ">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="13" name="Gilroy-Bold"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Информационный бот по коронавирусу.">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="12" name="Gilroy-Regular"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8f-z9-EnX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                                        <connections>
+                                                            <action selector="openTelegramBot:" destination="4zP-Zl-QLR" eventType="touchUpInside" id="S8D-GO-mZt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1zW-IS-YGj" secondAttribute="bottom" constant="5" id="3xr-3f-6Hr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1zW-IS-YGj" secondAttribute="trailing" constant="5" id="48k-hr-NTv"/>
+                                                    <constraint firstItem="1zW-IS-YGj" firstAttribute="leading" secondItem="Lqk-gB-mVL" secondAttribute="trailing" constant="15" id="4TJ-Vo-b8X"/>
+                                                    <constraint firstItem="Lqk-gB-mVL" firstAttribute="leading" secondItem="gi6-aR-JNg" secondAttribute="leading" constant="10" id="9Xr-mq-8KQ"/>
+                                                    <constraint firstItem="Lqk-gB-mVL" firstAttribute="top" secondItem="gi6-aR-JNg" secondAttribute="top" constant="5" id="C4d-gp-rXd"/>
+                                                    <constraint firstItem="M8f-z9-EnX" firstAttribute="top" secondItem="gi6-aR-JNg" secondAttribute="top" id="EjD-c5-r5T"/>
+                                                    <constraint firstAttribute="height" constant="70" id="LZu-wQ-a20"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Lqk-gB-mVL" secondAttribute="bottom" constant="5" id="LwE-cw-sbO"/>
+                                                    <constraint firstItem="M8f-z9-EnX" firstAttribute="leading" secondItem="gi6-aR-JNg" secondAttribute="leading" id="PBS-Ql-SDN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="M8f-z9-EnX" secondAttribute="bottom" id="erq-cf-MjD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="M8f-z9-EnX" secondAttribute="trailing" id="mq9-aA-iTr"/>
+                                                    <constraint firstItem="1zW-IS-YGj" firstAttribute="top" secondItem="gi6-aR-JNg" secondAttribute="top" constant="5" id="oA3-JI-LrF"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD3-1b-pZH">
+                                                <rect key="frame" x="20" y="597.5" width="335" height="54.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Официальный">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="16" name="Gilroy-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" новостной Telegram-канал по ситуации с коронавирусом в Республике Казахстан">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="15" name="Gilroy-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-3Y-qb8">
+                                                <rect key="frame" x="20" y="662" width="335" height="70"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeS-0V-DoX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                                        <connections>
+                                                            <action selector="openTelegramNewsBot:" destination="4zP-Zl-QLR" eventType="touchUpInside" id="miG-R1-lwr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegram" translatesAutoresizingMaskIntoConstraints="NO" id="cKj-DC-VSx">
+                                                        <rect key="frame" x="10" y="5" width="45" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="fG0-dV-070"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE6-E2-1Hn">
+                                                        <rect key="frame" x="70" y="5" width="260" height="60"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="CORONAVIRUS2020.KZ ">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="13" name="Gilroy-Bold"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Официальная информация по ситуации с коронавирусом в Казахстане. ">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="12" name="Gilroy-Regular"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="AeS-0V-DoX" secondAttribute="trailing" id="1pB-zh-Kt8"/>
+                                                    <constraint firstItem="AeS-0V-DoX" firstAttribute="leading" secondItem="8eh-3Y-qb8" secondAttribute="leading" id="CSp-7C-DAx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cKj-DC-VSx" secondAttribute="bottom" constant="5" id="FcI-pD-Nme"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AeS-0V-DoX" secondAttribute="bottom" id="HWR-d4-egp"/>
+                                                    <constraint firstItem="AeS-0V-DoX" firstAttribute="top" secondItem="8eh-3Y-qb8" secondAttribute="top" id="QCN-BG-8L5"/>
+                                                    <constraint firstItem="cE6-E2-1Hn" firstAttribute="top" secondItem="8eh-3Y-qb8" secondAttribute="top" constant="5" id="ScL-r7-hAA"/>
+                                                    <constraint firstItem="cKj-DC-VSx" firstAttribute="top" secondItem="8eh-3Y-qb8" secondAttribute="top" constant="5" id="aa1-GA-U1c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cE6-E2-1Hn" secondAttribute="bottom" constant="5" id="fJK-eh-aam"/>
+                                                    <constraint firstAttribute="height" constant="70" id="g15-Ar-5KR"/>
+                                                    <constraint firstItem="cE6-E2-1Hn" firstAttribute="leading" secondItem="cKj-DC-VSx" secondAttribute="trailing" constant="15" id="hjv-e0-lBv"/>
+                                                    <constraint firstItem="cKj-DC-VSx" firstAttribute="leading" secondItem="8eh-3Y-qb8" secondAttribute="leading" constant="10" id="nC2-jL-Uek"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cE6-E2-1Hn" secondAttribute="trailing" constant="5" id="pn1-LM-Mrf"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Sg4-HZ-3Ns" secondAttribute="trailing" constant="20" id="3QR-si-PNo"/>
+                                            <constraint firstItem="NvX-za-Smv" firstAttribute="top" secondItem="Sg4-HZ-3Ns" secondAttribute="bottom" constant="5" id="5B7-QA-H9E"/>
+                                            <constraint firstItem="rOm-xd-ct6" firstAttribute="top" secondItem="ckz-C3-dYd" secondAttribute="bottom" constant="10" id="8El-4s-EeJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="8eh-3Y-qb8" secondAttribute="bottom" constant="15" id="9mw-sO-rCb"/>
+                                            <constraint firstItem="8eh-3Y-qb8" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="CSP-Sa-FDs"/>
+                                            <constraint firstItem="rOm-xd-ct6" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="JVA-lQ-JiP"/>
+                                            <constraint firstAttribute="trailing" secondItem="MD3-1b-pZH" secondAttribute="trailing" constant="20" id="M2n-2N-YZC"/>
+                                            <constraint firstItem="Sg4-HZ-3Ns" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="NcS-HF-3a7"/>
+                                            <constraint firstAttribute="trailing" secondItem="NvX-za-Smv" secondAttribute="trailing" constant="20" id="Qig-jd-FDF"/>
+                                            <constraint firstItem="ddf-K9-zyf" firstAttribute="top" secondItem="7zt-lD-bRh" secondAttribute="top" constant="20" id="RuA-bD-GM5"/>
+                                            <constraint firstItem="Sg4-HZ-3Ns" firstAttribute="top" secondItem="rOm-xd-ct6" secondAttribute="bottom" constant="15" id="Shv-A3-zu7"/>
+                                            <constraint firstItem="ckz-C3-dYd" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="Wc2-Xt-Vju"/>
+                                            <constraint firstAttribute="trailing" secondItem="rOm-xd-ct6" secondAttribute="trailing" constant="20" id="Y5k-gX-fsT"/>
+                                            <constraint firstItem="8eh-3Y-qb8" firstAttribute="top" secondItem="MD3-1b-pZH" secondAttribute="bottom" constant="10" id="aeo-PR-xL7"/>
+                                            <constraint firstItem="gi6-aR-JNg" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="czg-yZ-Zow"/>
+                                            <constraint firstAttribute="trailing" secondItem="ddf-K9-zyf" secondAttribute="trailing" constant="20" id="d7q-rf-h0w"/>
+                                            <constraint firstItem="MD3-1b-pZH" firstAttribute="top" secondItem="gi6-aR-JNg" secondAttribute="bottom" constant="10" id="ePi-T8-C5G"/>
+                                            <constraint firstItem="gi6-aR-JNg" firstAttribute="top" secondItem="NvX-za-Smv" secondAttribute="bottom" constant="10" id="i1w-ed-cFv"/>
+                                            <constraint firstItem="MD3-1b-pZH" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="jAa-MX-gUW"/>
+                                            <constraint firstItem="ddf-K9-zyf" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="lOC-Ol-FkT"/>
+                                            <constraint firstAttribute="trailing" secondItem="8eh-3Y-qb8" secondAttribute="trailing" constant="20" id="ltX-pT-Lob"/>
+                                            <constraint firstAttribute="trailing" secondItem="gi6-aR-JNg" secondAttribute="trailing" constant="20" id="q52-3D-5Le"/>
+                                            <constraint firstItem="NvX-za-Smv" firstAttribute="leading" secondItem="7zt-lD-bRh" secondAttribute="leading" constant="20" id="s3x-vl-szQ"/>
+                                            <constraint firstItem="ckz-C3-dYd" firstAttribute="top" secondItem="ddf-K9-zyf" secondAttribute="bottom" constant="5" id="wIl-CI-YJu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ckz-C3-dYd" secondAttribute="trailing" constant="20" id="yQx-WC-w3w"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7zt-lD-bRh" secondAttribute="bottom" id="AGD-Ot-7dk"/>
+                                    <constraint firstItem="7zt-lD-bRh" firstAttribute="top" secondItem="jLy-aa-lJN" secondAttribute="top" id="Djh-6b-pKm"/>
+                                    <constraint firstItem="7zt-lD-bRh" firstAttribute="leading" secondItem="jLy-aa-lJN" secondAttribute="leading" id="E0N-Hw-EnA"/>
+                                    <constraint firstItem="7zt-lD-bRh" firstAttribute="height" secondItem="jLy-aa-lJN" secondAttribute="height" priority="250" id="HNB-jR-Mx2"/>
+                                    <constraint firstAttribute="trailing" secondItem="7zt-lD-bRh" secondAttribute="trailing" id="bxr-jZ-ebB"/>
+                                    <constraint firstItem="7zt-lD-bRh" firstAttribute="width" secondItem="jLy-aa-lJN" secondAttribute="width" id="vYV-SD-ysh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="nP3-54-Y4e"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fif-Bg-ig7"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W1n-Ew-fxI" firstAttribute="bottom" secondItem="jLy-aa-lJN" secondAttribute="bottom" id="6RP-nE-gE1"/>
+                            <constraint firstItem="W1n-Ew-fxI" firstAttribute="trailing" secondItem="jLy-aa-lJN" secondAttribute="trailing" id="R7D-Kk-3n1"/>
+                            <constraint firstItem="jLy-aa-lJN" firstAttribute="top" secondItem="W1n-Ew-fxI" secondAttribute="top" id="Vz8-Zl-NEU"/>
+                            <constraint firstItem="jLy-aa-lJN" firstAttribute="leading" secondItem="W1n-Ew-fxI" secondAttribute="leading" id="vxI-m6-rDp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W1n-Ew-fxI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Контакты" image="phone.circle" catalog="system" selectedImage="phone.circle.fill" id="aer-bx-czP"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="phoneNumbersStackView" destination="rOm-xd-ct6" id="uxU-Ii-fIE"/>
+                        <outlet property="telegramBotBackgroundView" destination="gi6-aR-JNg" id="hMj-Mf-ZcO"/>
+                        <outlet property="telegramNewsBotBackgroundView" destination="8eh-3Y-qb8" id="SEp-OK-caB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvN-K8-exx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="585"/>
+            <point key="canvasLocation" x="1680.8" y="584.25787106446785"/>
         </scene>
         <!--Информация-->
         <scene sceneID="BDP-Ff-MNd">
@@ -536,17 +846,17 @@
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="symptom3" id="nD2-Ap-iFo">
                                                         <rect key="frame" x="410" y="5" width="120" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eIu-nu-atS">
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="eIu-nu-atS">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="190"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cough" translatesAutoresizingMaskIntoConstraints="NO" id="f87-c3-Loy">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cough" translatesAutoresizingMaskIntoConstraints="NO" id="f87-c3-Loy">
                                                                     <rect key="frame" x="5" y="10" width="110" height="128"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="128" id="nQA-dQ-ddx"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Боль в горле" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrw-dq-vsH">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Боль в горле" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrw-dq-vsH">
                                                                     <rect key="frame" x="5" y="148" width="110" height="17.5"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="15"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -836,6 +1146,7 @@
         <image name="phone.circle.fill" catalog="system" width="64" height="60"/>
         <image name="sneezing" width="512" height="512"/>
         <image name="stayathome" width="512" height="512"/>
+        <image name="telegram" width="2133" height="2133"/>
         <image name="washhands" width="512" height="512"/>
     </resources>
 </document>

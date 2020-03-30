@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921A0E12243242520082A285 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A0E11243242520082A285 /* ContactsViewController.swift */; };
 		9244ED20243121380019E7AE /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244ED1F243121380019E7AE /* InformationViewController.swift */; };
 		92A974C6242F4C650092CB11 /* InfectedCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A974C5242F4C650092CB11 /* InfectedCityCell.xib */; };
 		92A974C8242F4EB00092CB11 /* InfectedCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		64B0C130BC0B2B533DE45AA6 /* Pods-CovidKazakhstan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidKazakhstan.debug.xcconfig"; path = "Target Support Files/Pods-CovidKazakhstan/Pods-CovidKazakhstan.debug.xcconfig"; sourceTree = "<group>"; };
+		921A0E11243242520082A285 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		9244ED1F243121380019E7AE /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		92A974C5242F4C650092CB11 /* InfectedCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfectedCityCell.xib; sourceTree = "<group>"; };
 		92A974C7242F4EB00092CB11 /* InfectedCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedCityCell.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				92A974CD242FA4F40092CB11 /* LastDataViewController.swift */,
 				9244ED1F243121380019E7AE /* InformationViewController.swift */,
+				921A0E11243242520082A285 /* ContactsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A974D0242FB3AF0092CB11 /* ContactPeopleData.swift in Sources */,
+				921A0E12243242520082A285 /* ContactsViewController.swift in Sources */,
 				92C95BF42430B94600C49B81 /* WebScraper.swift in Sources */,
 				92EEEBD9242E7C3100DAAC3C /* ViewController.swift in Sources */,
 				92EEEBD5242E7C3100DAAC3C /* AppDelegate.swift in Sources */,
