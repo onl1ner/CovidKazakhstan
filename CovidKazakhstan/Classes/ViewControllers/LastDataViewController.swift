@@ -21,21 +21,41 @@ class LastDataViewController: UIViewController {
     @IBOutlet var deathsBackgroundView: UIView!
     @IBOutlet var deathsAmount: UILabel!
     
-    @IBOutlet var contactPeopleBackgroundView: UIView!
-    @IBOutlet var contactPeopleAmount: UILabel!
+    @IBOutlet var testAmountBackgroundView: UIView!
+    @IBOutlet var testAmount: UILabel!
     
     @IBOutlet var infectedCitiesStackView: UIStackView!
+    
+    @IBOutlet var peopleOnQuarantineBackgroundView: UIView!
+    @IBOutlet var peopleOnQuarantineAmount: UILabel!
+    
+    @IBOutlet var peopleOnHomeQuarantineBackgroundView: UIView!
+    @IBOutlet var peopleOnHomeQuarantineAmount: UILabel!
     
     let characterSet = CharacterSet(charactersIn: "0123456789").inverted
     
     let url = URL(string: "https://www.coronavirus2020.kz/")!
     
+    var viewsToCustomize : [UIView] = []
+    
     var dataByCity : [(String, [Int])]?
     
     func updateData() -> Void {
-        ContactPeopleData.getContactPeopleAmount() { (amount) in
+        JSONData.getOnQuarantine() { (amount) in
             DispatchQueue.main.async {
-                self.contactPeopleAmount.text = amount
+                self.peopleOnQuarantineAmount.text = amount
+            }
+        }
+        
+        JSONData.getOnHomeQuarantine() { (amount) in
+            DispatchQueue.main.async {
+                self.peopleOnHomeQuarantineAmount.text = amount
+            }
+        }
+        
+        JSONData.getTotalTestAmount() { (amount) in
+            DispatchQueue.main.async {
+                self.testAmount.text = amount
             }
         }
         
@@ -80,24 +100,15 @@ class LastDataViewController: UIViewController {
     override func viewDidLoad() -> Void {
         super.viewDidLoad()
         
-        infectedBackgroundView.layer.cornerRadius = 10
-        infectedBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                           withOpacity: 0.2,
-                                           withOffset: CGSize(width: 0, height: 1))
+        viewsToCustomize = [infectedBackgroundView, recoveredBackgroundView, deathsBackgroundView,
+                            peopleOnQuarantineBackgroundView, peopleOnHomeQuarantineBackgroundView,
+                            testAmountBackgroundView]
         
-        recoveredBackgroundView.layer.cornerRadius = 10
-        recoveredBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                            withOpacity: 0.2,
-                                            withOffset: CGSize(width: 0, height: 1))
-        
-        deathsBackgroundView.layer.cornerRadius = 10
-        deathsBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                         withOpacity: 0.2,
-                                         withOffset: CGSize(width: 0, height: 1))
-        
-        contactPeopleBackgroundView.layer.cornerRadius = 10
-        contactPeopleBackgroundView.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                                                withOpacity: 0.2,
-                                                withOffset: CGSize(width: 0, height: 1))
+        for i in viewsToCustomize {
+            i.layer.cornerRadius = 10
+            i.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
+                          withOpacity: 0.2,
+                          withOffset: CGSize(width: 0, height: 1))
+        }
     }
 }

@@ -10,9 +10,13 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
+    @IBOutlet var scrollView: UIScrollView!
+    
     @IBOutlet var aboutCoronaBox: UIView!
     
     @IBOutlet var symptomsCollectionView: UICollectionView!
+    
+    @IBOutlet var howToAvoidStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,12 @@ class InformationViewController: UIViewController {
                                    withOffset: CGSize(width: 0, height: 1))
         
         symptomsCollectionView.dataSource = self
+        
+        for i in howToAvoidStackView.subviews {
+            i.layer.cornerRadius = 10
+            
+            i.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), withOpacity: 0.2, withOffset: CGSize(width: 0, height: 1))
+        }
     }
 }
 
@@ -36,12 +46,7 @@ extension InformationViewController : UICollectionViewDataSource {
         let cell = symptomsCollectionView.dequeueReusableCell(withReuseIdentifier: "symptom\(indexPath.item)", for: indexPath)
         
         cell.layer.cornerRadius = 10
-        cell.setupShadow(withColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
-                         withOpacity: 0.2,
-                         withOffset: CGSize(width: 0, height: 2))
         
         return cell
     }
-    
-    
 }
