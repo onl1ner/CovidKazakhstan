@@ -82,9 +82,11 @@ class LastDataViewController: UIViewController {
 
                     newCell.infectedCityLabel.text = cell.0
                     newCell.infectedAmount.text = String(cell.1[0])
-
+                    
                     newCell.recoveredAmount.text = String(cell.1[1])
-
+                    
+                    newCell.deathsAmount.text = String(cell.1[2])
+                    
                     self.infectedCitiesStackView.addArrangedSubview(newCell)
                 }
             }

@@ -11,9 +11,12 @@ import UIKit
 class InfectedCityCell: UIView {
 
     @IBOutlet var infectedCityLabel: UILabel!
+    
     @IBOutlet var infectedAmount: UILabel!
     
     @IBOutlet var recoveredAmount: UILabel!
+    
+    @IBOutlet var deathsAmount: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

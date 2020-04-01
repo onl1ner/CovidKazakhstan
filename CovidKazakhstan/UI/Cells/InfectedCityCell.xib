@@ -28,25 +28,37 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="135" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51c-P4-UaD">
-                    <rect key="frame" x="120.5" y="42.5" width="34" height="28"/>
+                    <rect key="frame" x="68.5" y="42.5" width="34" height="28"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="23"/>
                     <color key="textColor" red="0.7434082031" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зараженные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-eo-LTs">
-                    <rect key="frame" x="101.5" y="70.5" width="72.5" height="14"/>
+                    <rect key="frame" x="49" y="70.5" width="72.5" height="14"/>
                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtF-m4-BvK">
-                    <rect key="frame" x="218.5" y="42.5" width="38" height="28"/>
+                    <rect key="frame" x="168.5" y="42.5" width="38" height="28"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="23"/>
                     <color key="textColor" red="0.20845566169999999" green="0.8088378906" blue="0.21280078550000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выздоровевшие" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLv-lU-21Z">
-                    <rect key="frame" x="191.5" y="70.5" width="92" height="14"/>
+                    <rect key="frame" x="141.5" y="70.5" width="92" height="14"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HK-Eb-7Lw">
+                    <rect key="frame" x="264.5" y="42.5" width="38" height="28"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="23"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Смертей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa8-GP-n8s">
+                    <rect key="frame" x="258.5" y="70.5" width="50" height="14"/>
                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -55,19 +67,24 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="F4e-fc-rPq" firstAttribute="leading" secondItem="BzW-s9-zHO" secondAttribute="leading" constant="15" id="6OK-sn-9qw"/>
-                <constraint firstItem="RtF-m4-BvK" firstAttribute="centerX" secondItem="BzW-s9-zHO" secondAttribute="centerX" constant="50" id="Eee-vC-2Te"/>
+                <constraint firstItem="RtF-m4-BvK" firstAttribute="centerX" secondItem="BzW-s9-zHO" secondAttribute="centerX" id="Eee-vC-2Te"/>
                 <constraint firstItem="ZO0-eo-LTs" firstAttribute="top" secondItem="51c-P4-UaD" secondAttribute="bottom" id="HAF-x6-bc9"/>
                 <constraint firstItem="51c-P4-UaD" firstAttribute="top" secondItem="F4e-fc-rPq" secondAttribute="bottom" constant="10" id="MtP-Df-Pkd"/>
-                <constraint firstItem="51c-P4-UaD" firstAttribute="centerX" secondItem="BzW-s9-zHO" secondAttribute="centerX" constant="-50" id="PRM-se-EGU"/>
+                <constraint firstItem="Qa8-GP-n8s" firstAttribute="leading" secondItem="lLv-lU-21Z" secondAttribute="trailing" constant="25" id="MuI-Eg-qI1"/>
+                <constraint firstItem="lLv-lU-21Z" firstAttribute="leading" secondItem="ZO0-eo-LTs" secondAttribute="trailing" constant="20" id="Wgd-s0-JcN"/>
                 <constraint firstItem="lLv-lU-21Z" firstAttribute="top" secondItem="RtF-m4-BvK" secondAttribute="bottom" id="e5M-Db-SUY"/>
                 <constraint firstItem="RtF-m4-BvK" firstAttribute="top" secondItem="F4e-fc-rPq" secondAttribute="bottom" constant="10" id="eKY-eP-NxU"/>
                 <constraint firstItem="BzW-s9-zHO" firstAttribute="trailing" secondItem="F4e-fc-rPq" secondAttribute="trailing" constant="15" id="f0w-Sg-dGF"/>
+                <constraint firstItem="51c-P4-UaD" firstAttribute="centerX" secondItem="ZO0-eo-LTs" secondAttribute="centerX" id="i0C-Jd-fp0"/>
                 <constraint firstItem="lLv-lU-21Z" firstAttribute="centerX" secondItem="RtF-m4-BvK" secondAttribute="centerX" id="myy-FS-EeZ"/>
+                <constraint firstItem="8HK-Eb-7Lw" firstAttribute="top" secondItem="F4e-fc-rPq" secondAttribute="bottom" constant="10" id="qW9-08-2ZX"/>
+                <constraint firstItem="8HK-Eb-7Lw" firstAttribute="centerX" secondItem="Qa8-GP-n8s" secondAttribute="centerX" id="tO2-ag-dpu"/>
+                <constraint firstItem="Qa8-GP-n8s" firstAttribute="top" secondItem="8HK-Eb-7Lw" secondAttribute="bottom" id="uwg-dF-7MM"/>
                 <constraint firstItem="F4e-fc-rPq" firstAttribute="top" secondItem="BzW-s9-zHO" secondAttribute="top" constant="15" id="wxv-6e-LdG"/>
-                <constraint firstItem="ZO0-eo-LTs" firstAttribute="centerX" secondItem="51c-P4-UaD" secondAttribute="centerX" id="xrA-dV-NMA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="BzW-s9-zHO"/>
             <connections>
+                <outlet property="deathsAmount" destination="8HK-Eb-7Lw" id="aeU-53-k9p"/>
                 <outlet property="infectedAmount" destination="51c-P4-UaD" id="kde-d0-iyd"/>
                 <outlet property="infectedCityLabel" destination="F4e-fc-rPq" id="Jn7-84-mJa"/>
                 <outlet property="recoveredAmount" destination="RtF-m4-BvK" id="IfK-Tv-Tli"/>
